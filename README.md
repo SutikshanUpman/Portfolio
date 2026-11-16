@@ -45,10 +45,20 @@ Four projects selected from both resumes. The internship's Lead Intelligence & A
 
 1. [x] Add search/share metadata and a small local favicon.
 2. [x] Add a simple build/link check and GitHub Actions validation.
-3. [ ] Verify the release, document remaining browser checks, and finish the hosting handoff.
+3. [x] Verify the release, document remaining browser checks, and finish the hosting handoff.
 
-## Phase 4 - Go live
+## Phase 4 - Go live on GitHub Pages
 
-1. [ ] Choose reliable static hosting with no application server to wake up.
-2. [ ] Deploy the portfolio and configure its production URL.
-3. [ ] Verify HTTPS, mobile layout, navigation, and project links on the public site.
+Use [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages) for this static portfolio. It serves HTML, CSS, and JavaScript directly; there is no application process to restart. Project backends are separate deployments. The existing MediGuard-AI demo link still points to Hugging Face.
+
+1. [ ] Confirm the repository's Check portfolio workflow passes, then enable Pages in Settings > Pages using Deploy from a branch, `main`, and `/ (root)`.
+2. [ ] Confirm the assigned HTTPS URL works; add its canonical URL and `og:url` to `index.html` after deployment.
+3. [ ] Check the public site at desktop and mobile widths: navigation, keyboard focus, reduced motion, all four project links, and the demo. Confirm resume PDFs remain excluded.
+
+## Verification
+
+- Local TypeScript build, assets, fragment links, unique IDs, four project cards, and matching README source links passed.
+- Footer year, one-time scroll reveals, reduced-motion handling, and mobile-menu close behavior passed script checks.
+- The page and all five local assets returned HTTP 200. Resume PDFs remain ignored and untracked.
+- Visual desktop/mobile and real keyboard checks remain for Phase 4: browser automation could not verify the current browser URL in this session. Source checks do not replace visual review.
+- GitHub Actions validation is configured, but its remote result could not be read because the API returned HTTP 403. Verify the run in the repository's Actions tab before enabling Pages.
