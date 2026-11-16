@@ -55,12 +55,12 @@ Use [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-
 
 1. [x] Check portfolio workflow passed; enabled GitHub Pages from `main` and `/ (root)`.
 2. [x] Verified the public HTTPS URL and added its canonical URL and `og:url` to `index.html`.
-3. [ ] Check the public site at desktop and mobile widths: navigation, keyboard focus, reduced motion, all four project links, and the demo. Confirm resume PDFs remain excluded.
+3. [ ] Public assets, navigation anchors, four project source links, demo URL, and resume exclusions passed deployment checks. Finish the visual desktop/mobile, keyboard, and reduced-motion review in a browser.
 
 ## Verification
 
 - Local TypeScript build, assets, fragment links, unique IDs, four project cards, and matching README source links passed.
 - Footer year, one-time scroll reveals, reduced-motion handling, and mobile-menu close behavior passed script checks.
-- The page and all five local assets returned HTTP 200. Resume PDFs remain ignored and untracked.
-- Visual desktop/mobile and real keyboard checks remain for Phase 4: browser automation could not verify the current browser URL in this session. Source checks do not replace visual review.
-- GitHub Actions validation passed before Pages was enabled: [successful check](https://github.com/SutikshanUpman/Portfolio/actions/runs/43840712109).
+- The public HTTPS page and all five assets returned HTTP 200 and matched local source. All four project source URLs and the demo URL returned HTTP 200. Both resume PDF URLs returned HTTP 404; the files remain ignored and untracked.
+- Visual desktop/mobile, real keyboard, and reduced-motion checks remain for Phase 4. Browser automation could not verify the current browser URL during the earlier preview; HTTP and script checks do not replace visual review.
+- GitHub Actions [validation](https://github.com/SutikshanUpman/Portfolio/actions/runs/43877783595) and [Pages deployment](https://github.com/SutikshanUpman/Portfolio/actions/runs/43877782016) passed for the production metadata commit. Future pushes to `main` automatically rebuild the site.
