@@ -59,4 +59,32 @@ footer { font-size: .8rem; text-align: center; }
   .section-space { padding-block: 60px; }
   .project { padding: 26px; }
 }
-@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+/* Motion uses CSS; one observer reveals content once as it enters view. */
+.color-dots { display: flex; justify-content: center; gap: 8px; margin-bottom: 28px; }
+.color-dots span { width: 9px; height: 9px; border-radius: 50%; background: #4285f4; animation: float 3s ease-in-out 2; }
+.color-dots span:nth-child(2) { background: #ea4335; animation-delay: .15s; }
+.color-dots span:nth-child(3) { background: #fbbc05; animation-delay: .3s; }
+.color-dots span:nth-child(4) { background: #34a853; animation-delay: .45s; }
+.hero h1, .hero .eyebrow, .hero .lead, .hero .text-secondary, .hero .d-flex { animation: arrive .7s both; }
+.hero h1 { animation-delay: .1s; }
+.hero .lead { animation-delay: .2s; }
+.hero .text-secondary { animation-delay: .3s; }
+.hero .d-flex { animation-delay: .4s; }
+.btn, .project, .nav-link, .project a span { transition: transform .2s, box-shadow .2s, border-color .2s, color .2s; }
+.btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px #20212414; }
+.btn:active { transform: translateY(0); }
+.project a:hover span { transform: translateX(5px); }
+.nav-link { position: relative; }
+.nav-link::after { content: ""; position: absolute; bottom: 4px; left: 8px; right: 8px; height: 2px; background: var(--blue); transform: scaleX(0); transition: transform .2s; }
+.nav-link:hover::after, .nav-link:focus-visible::after { transform: scaleX(1); }
+.reveal { animation: arrive .65s both; }
+@media (hover: hover) {
+  .project:hover { transform: translateY(-5px); border-color: var(--accent); box-shadow: 0 8px 28px #2021240c; }
+}
+@keyframes arrive { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes float { 50% { transform: translateY(-7px); } }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  .project:hover, .btn:hover, .project a:hover span { transform: none; }
+}
