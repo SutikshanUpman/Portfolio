@@ -41,7 +41,7 @@ Four projects selected from both resumes. The internship's Lead Intelligence & A
 
 ## Phase 3 - Release preparation
 
-1. [ ] Add search/share metadata and a small local favicon.
+1. [x] Add search/share metadata and a small local favicon.
 2. [ ] Add a simple build/link check and GitHub Actions validation.
 3. [ ] Verify the release, document remaining browser checks, and finish the hosting handoff.
 
