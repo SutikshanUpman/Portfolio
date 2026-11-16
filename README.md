@@ -51,7 +51,7 @@ Four projects selected from both resumes. The internship's Lead Intelligence & A
 
 Use [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages) for this static portfolio. It serves HTML, CSS, and JavaScript directly; there is no application process to restart. Project backends are separate deployments. The existing MediGuard-AI demo link still points to Hugging Face.
 
-1. [ ] Confirm the repository's Check portfolio workflow passes, then enable Pages in Settings > Pages using Deploy from a branch, `main`, and `/ (root)`.
+1. [x] Check portfolio workflow passed; enabled GitHub Pages from `main` and `/ (root)`.
 2. [ ] Confirm the assigned HTTPS URL works; add its canonical URL and `og:url` to `index.html` after deployment.
 3. [ ] Check the public site at desktop and mobile widths: navigation, keyboard focus, reduced motion, all four project links, and the demo. Confirm resume PDFs remain excluded.
 
@@ -61,4 +61,4 @@ Use [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-
 - Footer year, one-time scroll reveals, reduced-motion handling, and mobile-menu close behavior passed script checks.
 - The page and all five local assets returned HTTP 200. Resume PDFs remain ignored and untracked.
 - Visual desktop/mobile and real keyboard checks remain for Phase 4: browser automation could not verify the current browser URL in this session. Source checks do not replace visual review.
-- GitHub Actions validation is configured, but its remote result could not be read because the API returned HTTP 403. Verify the run in the repository's Actions tab before enabling Pages.
+- GitHub Actions validation passed before Pages was enabled: [successful check](https://github.com/SutikshanUpman/Portfolio/actions/runs/43840712109).
