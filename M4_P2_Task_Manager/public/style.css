@@ -1,0 +1,8 @@
+body { background: #f4f6fa; color: #182538; font-family: Inter, Arial, sans-serif; }
+main { max-width: 780px !important; }
+h1 { font-weight: 700; }
+.list-group-item { padding: 18px; }
+.task-title { overflow-wrap: anywhere; }
+.task-done { text-decoration: line-through; color: #667085; }
+.task-actions { flex-shrink: 0; }
+@media (max-width: 480px) { .list-group-item { flex-wrap: wrap; } .task-actions { margin-left: auto; } }

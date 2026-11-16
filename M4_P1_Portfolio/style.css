@@ -1,0 +1,18 @@
+html { scroll-behavior: smooth; scroll-padding-top: 85px; }
+body { color: #172d34; font-family: Inter, Arial, sans-serif; line-height: 1.7; }
+.container { max-width: 1120px; }
+.hero { padding: 100px 0; background: #edf4ef; }
+.eyebrow { letter-spacing: .12em; color: #32654d; font-size: .8rem; font-weight: 700; }
+h1 { font-size: clamp(2.8rem, 7vw, 5.5rem); font-weight: 750; line-height: 1.08; letter-spacing: -.04em; }
+h2 { font-size: 2rem; font-weight: 700; }
+h3 { font-size: 1.2rem; font-weight: 650; line-height: 1.5; }
+.section-space { padding-top: 72px; padding-bottom: 72px; }
+.skills-section { background: #f6f7f5; }
+.project { padding: 24px 0; border-top: 2px solid #245c44; }
+a { color: #215d43; text-underline-offset: 4px; }
+.btn-primary { background: #245c44; border-color: #245c44; }
+.btn-primary:hover { background: #18432f; border-color: #18432f; }
+.contact-section { background: #edf4ef; }
+.contact-email { font-size: clamp(1rem, 3vw, 1.8rem); overflow-wrap: anywhere; }
+@media (max-width: 767px) { .hero { padding: 64px 0; } .section-space { padding-top: 48px; padding-bottom: 48px; } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
