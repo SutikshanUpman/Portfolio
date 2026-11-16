@@ -36,7 +36,7 @@ Four projects selected from both resumes. The internship's Lead Intelligence & A
 ## Phase 2 - Content, space, and motion
 
 1. [x] Present four resume projects in a two-column grid; separate internship experience and credit team contributions.
-2. [ ] Create a spacious, Google-inspired interface with clear typography, responsive navigation, and keyboard access.
+2. [x] Create a spacious, Google-inspired interface with clear typography, responsive navigation, and keyboard access.
 3. [ ] Add lightweight entrance, scroll, hover, and navigation animations with reduced-motion support.
 
 ## Phase 3 - Release preparation
