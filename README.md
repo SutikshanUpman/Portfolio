@@ -16,6 +16,8 @@ python -m http.server 8081 --bind 127.0.0.1
 
 Open http://127.0.0.1:8081. Edit `index.html` for content, `style.css` for styling, and `script.ts` for behavior. Run `npm run build` after TypeScript changes, or use `npm run watch` while editing. The generated `script.js` is included for static hosting.
 
+Run `npm run check` before committing. It builds TypeScript and checks local assets, navigation anchors, four project cards, and README source links. GitHub Actions runs the same check on pushes and pull requests.
+
 ## Projects
 
 Four projects selected from both resumes. The internship's Lead Intelligence & Auto-Quote System belongs in Experience.
@@ -42,7 +44,7 @@ Four projects selected from both resumes. The internship's Lead Intelligence & A
 ## Phase 3 - Release preparation
 
 1. [x] Add search/share metadata and a small local favicon.
-2. [ ] Add a simple build/link check and GitHub Actions validation.
+2. [x] Add a simple build/link check and GitHub Actions validation.
 3. [ ] Verify the release, document remaining browser checks, and finish the hosting handoff.
 
 ## Phase 4 - Go live
