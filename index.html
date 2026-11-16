@@ -19,6 +19,7 @@
         <div class="navbar-nav ms-auto">
           <a class="nav-link" href="#home">Home</a>
           <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#experience">Experience</a>
           <a class="nav-link" href="#skills">Skills</a>
           <a class="nav-link" href="#projects">Projects</a>
           <a class="nav-link" href="#contact">Contact</a>
@@ -29,10 +30,10 @@
   <main>
     <section id="home" class="hero">
       <div class="container">
-        <p class="eyebrow">COMPUTER SCIENCE &amp; ENGINEERING</p>
-        <h1>Hi, I'm<br>Sutikshan Upman.</h1>
-        <p class="lead mt-4">I build web applications and machine learning systems.</p>
-        <p class="text-secondary">B.Tech student at IIIT Nagpur, graduating in 2028.</p>
+        <p class="eyebrow">HELLO, I'M SUTIKSHAN</p>
+        <h1>Sutikshan Upman<span class="name-dot">.</span></h1>
+        <p class="lead mt-4">Thoughtful software. Practical machine learning.</p>
+        <p class="text-secondary">Computer Science at IIIT Nagpur &middot; Class of 2028</p>
         <div class="d-flex flex-wrap gap-3 mt-4">
           <a class="btn btn-primary" href="#projects">View projects</a>
           <a class="btn btn-outline-dark" href="#contact">Get in touch</a>
@@ -44,8 +45,20 @@
         <div class="col-md-4"><h2>About me</h2></div>
         <div class="col-md-8">
           <p>I am studying Computer Science and Engineering at the Indian Institute of Information Technology, Nagpur, with a CGPA of 8.74.</p>
-          <p>During my AI internship at Impression Machinery India Pvt. Ltd. from May to July 2026, I built a lead intelligence and automated quotation system using FastAPI, SQLite, Docker, and machine learning.</p>
           <p class="mb-0">My interests include backend development, machine learning, and solving data structures and algorithms problems.</p>
+        </div>
+      </div>
+    </section>
+    <section id="experience" class="container section-space">
+      <div class="row g-4">
+        <div class="col-md-4"><p class="eyebrow">IN PRACTICE</p><h2>Experience</h2></div>
+        <div class="col-md-8">
+          <p class="text-secondary small">MAY &ndash; JULY 2026</p>
+          <h3>Artificial Intelligence Intern</h3>
+          <p>Impression Machinery India Pvt. Ltd.</p>
+          <p>Built a Lead Intelligence &amp; Auto-Quote System for a B2B manufacturer: lead scoring, product retrieval, and automated quotations, with a Streamlit interface.</p>
+          <p>Added guarded model retraining with automatic rollback when new metrics underperform.</p>
+          <p class="text-secondary mb-0">Python &middot; FastAPI &middot; SQLite &middot; ChromaDB &middot; scikit-learn &middot; Docker</p>
         </div>
       </div>
     </section>
@@ -55,30 +68,48 @@
         <div class="row g-4">
           <div class="col-md-4"><h3>Languages</h3><p>Python, Java, C++, SQL, JavaScript, TypeScript</p></div>
           <div class="col-md-4"><h3>Web &amp; backend</h3><p>HTML, CSS, React, Next.js, Node.js, Express.js, FastAPI, SQLite</p></div>
-          <div class="col-md-4"><h3>AI &amp; tools</h3><p>PyTorch, TensorFlow, scikit-learn, Git, GitHub, Docker</p></div>
+          <div class="col-md-4"><h3>AI &amp; tools</h3><p>PyTorch, TensorFlow, scikit-learn, LightGBM, RAG, Git, Docker</p></div>
         </div>
       </div>
     </section>
     <section id="projects" class="container section-space">
-      <h2 class="mb-4">Selected projects</h2>
+      <p class="eyebrow">A FEW THINGS I'VE BUILT</p>
+      <h2 class="mb-5">Selected projects</h2>
       <div class="row g-4">
-        <article class="col-md-4"><div class="project h-100">
-          <p class="text-secondary small">NEXT.JS / EXPRESS / FASTAPI</p>
-          <h3>Chest X-ray Pneumonia Detection</h3>
-          <p>A full-stack application with model comparisons, scan history, and Grad-CAM visualizations.</p>
-          <a href="https://github.com/SutikshanUpman/Chest-Xray-Pneumonia-Detection">View on GitHub &rarr;</a>
-        </div></article>
-        <article class="col-md-4"><div class="project h-100">
-          <p class="text-secondary small">PYTHON / FASTAPI / LLMs</p>
-          <h3>RecruiterEye</h3>
-          <p>A GitHub profile reviewer that matches repositories to a job description and reviews relevant code.</p>
-          <a href="https://github.com/SutikshanUpman/RecruiterEye">View on GitHub &rarr;</a>
-        </div></article>
-        <article class="col-md-4"><div class="project h-100">
-          <p class="text-secondary small">LIGHTGBM / NLP / REACT</p>
+        <article class="col-md-6"><div class="project h-100">
+          <p class="project-number">01 <span>ENTITY RESOLUTION</span></p>
           <h3>Resolv</h3>
-          <p>A multilingual entity-resolution pipeline built by a team of four for the Amazon ML Challenge 2026.</p>
-          <a href="https://github.com/rajveer1421/resolv-">View on GitHub &rarr;</a>
+          <p class="project-stack">Python / LightGBM / PyTorch / React</p>
+          <p>A multilingual pipeline matching noisy records to reference businesses. Built with a team of four for the Amazon ML Challenge 2026.</p>
+          <p class="project-result">Ranked 471 of 32,000 teams.</p>
+          <a href="https://github.com/rajveer1421/resolv-" aria-label="Resolv source on GitHub">Source <span aria-hidden="true">&rarr;</span></a>
+        </div></article>
+        <article class="col-md-6"><div class="project h-100">
+          <p class="project-number">02 <span>COMPUTER VISION</span></p>
+          <h3>Chest X-ray Pneumonia Detection</h3>
+          <p class="project-stack">Next.js / Express / FastAPI / TensorFlow</p>
+          <p>A full-stack model comparison with scan history and Grad-CAM visualizations. Compared six classifiers with validation-only threshold tuning.</p>
+          <p class="project-result">86.22% accuracy; 99.49% pneumonia recall on the reported test set. Research demo.</p>
+          <a href="https://github.com/SutikshanUpman/Chest-Xray-Pneumonia-Detection" aria-label="Chest X-ray Pneumonia Detection source on GitHub">Source <span aria-hidden="true">&rarr;</span></a>
+        </div></article>
+        <article class="col-md-6"><div class="project h-100">
+          <p class="project-number">03 <span>DEVELOPER TOOLS</span></p>
+          <h3>RecruiterEye</h3>
+          <p class="project-stack">Python / FastAPI / TF-IDF / LLMs</p>
+          <p>A GitHub profile reviewer that matches repositories to job descriptions, then reviews relevant code and repository activity.</p>
+          <p class="project-result">Ranks with TF-IDF; reserves deeper LLM review for the top one or two repositories.</p>
+          <a href="https://github.com/SutikshanUpman/RecruiterEye" aria-label="RecruiterEye source on GitHub">Source <span aria-hidden="true">&rarr;</span></a>
+        </div></article>
+        <article class="col-md-6"><div class="project h-100">
+          <p class="project-number">04 <span>REINFORCEMENT LEARNING</span></p>
+          <h3>MediGuard-AI</h3>
+          <p class="project-stack">Python / PyTorch / OpenEnv / Docker / Gradio</p>
+          <p>An ICU triage environment where an agent decides when to alert or ignore. Built with a team of three for the Meta PyTorch x Scaler OpenEnv Hackathon 2026.</p>
+          <p class="project-result">Reward shaping and a confidence-gated fallback to reduce alarm fatigue.</p>
+          <div class="d-flex gap-4">
+            <a href="https://github.com/SutikshanUpman/MediGuard-AI" aria-label="MediGuard-AI source on GitHub">Source <span aria-hidden="true">&rarr;</span></a>
+            <a href="https://huggingface.co/spaces/SutikshanUpman/MediGuard-AI" aria-label="MediGuard-AI demo on Hugging Face">Demo <span aria-hidden="true">&rarr;</span></a>
+          </div>
         </div></article>
       </div>
     </section>

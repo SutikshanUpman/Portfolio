@@ -18,25 +18,35 @@ Open http://127.0.0.1:8081. Edit `index.html` for content, `style.css` for styli
 
 ## Projects
 
-| Project | Description | Source |
+Four projects selected from both resumes. The internship's Lead Intelligence & Auto-Quote System belongs in Experience.
+
+| Project | Focus and contribution | Links |
 | --- | --- | --- |
-| Chest X-ray Pneumonia Detection | Full-stack application with model comparisons and Grad-CAM visualizations. | [GitHub](https://github.com/SutikshanUpman/Chest-Xray-Pneumonia-Detection) |
-| RecruiterEye | GitHub profile reviewer that matches repositories to job descriptions. | [GitHub](https://github.com/SutikshanUpman/RecruiterEye) |
-| Resolv | Multilingual entity resolution built by a team of four for the Amazon ML Challenge 2026. | [GitHub](https://github.com/rajveer1421/resolv-) |
+| Resolv | Multilingual entity resolution using LightGBM and transformer retrieval. Built with a team of four for the Amazon ML Challenge 2026; ranked 471 of 32,000 teams. | [Source](https://github.com/rajveer1421/resolv-) |
+| Chest X-ray Pneumonia Detection | Full-stack model comparison with Next.js, Express, FastAPI, and TensorFlow. Includes scan history and Grad-CAM visualizations; fine-tuned MobileNetV2 achieved 86.22% accuracy and 99.49% pneumonia recall on the reported test set. | [Source](https://github.com/SutikshanUpman/Chest-Xray-Pneumonia-Detection) |
+| RecruiterEye | FastAPI service that reviews GitHub profiles against job descriptions using TF-IDF ranking and selective LLM code review. | [Source](https://github.com/SutikshanUpman/RecruiterEye) |
+| MediGuard-AI | OpenEnv ICU triage environment built with a team of three using Python, PyTorch, Docker, and Gradio. Uses reward shaping and a confidence-gated fallback to reduce alarm fatigue. | [Source](https://github.com/SutikshanUpman/MediGuard-AI) / [Demo](https://huggingface.co/spaces/SutikshanUpman/MediGuard-AI) |
 
 ## Phase 1 - Foundation
 
-- [x] Standalone portfolio with Home, About, Skills, Projects, and Contact sections.
-- [x] TypeScript build, project links, and local setup instructions.
+- [x] Standalone HTML, CSS, Bootstrap, and TypeScript portfolio with local build instructions.
 - [x] Remove copied coursework files and ignore local resume PDFs.
+- [x] Review both resumes and select the four projects above.
 
-## Phase 2 - Polish
+## Phase 2 - Content, space, and motion
 
-- [ ] Refine project descriptions and personal content.
-- [ ] Improve mobile navigation, keyboard access, and typography.
-- [ ] Check desktop and mobile layouts in a browser.
+1. [x] Present four resume projects in a two-column grid; separate internship experience and credit team contributions.
+2. [ ] Create a spacious, Google-inspired interface with clear typography, responsive navigation, and keyboard access.
+3. [ ] Add lightweight entrance, scroll, hover, and navigation animations with reduced-motion support.
 
-## Phase 3 - Publish
+## Phase 3 - Release preparation
 
-- [ ] Configure GitHub Pages.
-- [ ] Add publishing metadata and verify the public URL.
+1. [ ] Add search/share metadata and a small local favicon.
+2. [ ] Add a simple build/link check and GitHub Actions validation.
+3. [ ] Verify the release, document remaining browser checks, and finish the hosting handoff.
+
+## Phase 4 - Go live
+
+1. [ ] Choose reliable static hosting with no application server to wake up.
+2. [ ] Deploy the portfolio and configure its production URL.
+3. [ ] Verify HTTPS, mobile layout, navigation, and project links on the public site.
