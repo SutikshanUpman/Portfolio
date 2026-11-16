@@ -2,7 +2,7 @@
 
 Personal portfolio for a Computer Science and Engineering student at IIIT Nagpur, featuring backend development and machine learning projects.
 
-The website uses HTML5, CSS3, Bootstrap 5.3.3, and JavaScript. Bootstrap is included locally. The homepage runs directly in a browser or through a static HTTP server. Three separate backend demonstrations are included under `projects/`.
+The website uses HTML5, CSS3, Bootstrap 5.3.3, and TypeScript. TypeScript compiles to the browser script `script.js`. Bootstrap is included locally. The homepage runs directly in a browser or through a static HTTP server. Three separate backend demonstrations are included under `projects/`.
 
 ## Run locally
 
@@ -10,8 +10,12 @@ From PowerShell, run the following commands and open http://127.0.0.1:8081.
 
 ```powershell
 Set-Location 'X:\Portfolio'
+npm ci
+npm run build
 python -m http.server 8081 --bind 127.0.0.1
 ```
+
+Use Node.js 22 or later for the TypeScript build. After editing `script.ts`, run `npm run build` and refresh the page. For automatic compilation while editing, run `npm run watch` in a second terminal. The compiled `script.js` is committed so the static site can also be served directly.
 
 The Node.js, database, and Docker setup commands for the backend demonstrations are in [the demo setup guide](docs/coursework.md). Those services run separately from the portfolio website.
 
@@ -21,7 +25,11 @@ The Node.js, database, and Docker setup commands for the backend demonstrations 
 Portfolio/
   index.html
   style.css
+  script.ts
   script.js
+  tsconfig.json
+  package.json
+  package-lock.json
   bootstrap.min.css
   bootstrap.bundle.min.js
   projects/
@@ -34,11 +42,13 @@ Portfolio/
   README.md
 ```
 
-`index.html` contains the portfolio content. `style.css` controls its appearance. `script.js` currently updates the footer year. The `outputs/` folder contains the original practical test reports and Git history bundle.
+`index.html` contains the portfolio content. `style.css` controls its appearance. `script.ts` updates the footer year and compiles to `script.js`. TypeScript checks are configured in `tsconfig.json`. The `outputs/` folder contains the original practical test reports and Git history bundle.
 
 ## Phase 1 - Make the project and content personal
 
 ### Completed organization
+
+- [x] Use TypeScript for the portfolio script with strict type checking and simple build/watch commands.
 
 - [x] Move the portfolio's five website files to the repository root.
 - [x] Rename the backend folders using descriptive project names.
@@ -67,11 +77,11 @@ Portfolio/
 
 The Chest X-ray and Resolv repository pages were accessible during the audit on 16 November 2026. These are the current project sources. [Chest X-ray repository](https://github.com/SutikshanUpman/Chest-Xray-Pneumonia-Detection), [Resolv repository](https://github.com/rajveer1421/resolv-).
 
-Phase 1 is complete when every displayed claim matches the chosen resume and every project has a clear contribution and working source link.
+Phase 1 is complete when the TypeScript build passes, every displayed claim matches the chosen resume, and every project has a clear contribution and working source link.
 
 ## Phase 2 - Improve the page and verify its behavior
 
-- [ ] Make the collapsed mobile navigation close after selecting a section. The current JavaScript only updates the year, so the menu stays expanded until it is toggled again.
+- [ ] Make the collapsed mobile navigation close after selecting a section. The current TypeScript only updates the year, so the menu stays expanded until it is toggled again.
 - [ ] Add a keyboard-accessible skip link to the main content.
 - [ ] Check keyboard focus, tab order, navigation toggling, contact links, and section anchor positions.
 - [ ] Resolve the font choice. The CSS declares Inter without loading it, so rendering currently depends on installed fonts and its Arial fallback.

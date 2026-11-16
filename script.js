@@ -1,1 +1,5 @@
-document.getElementById('year').textContent = new Date().getFullYear();
+"use strict";
+const yearElement = document.getElementById('year');
+if (yearElement) {
+    yearElement.textContent = String(new Date().getFullYear());
+}
