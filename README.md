@@ -1,5 +1,7 @@
 # Sutikshan Upman - Portfolio
 
+**Live site:** https://sutikshanupman.github.io/Portfolio/
+
 Personal portfolio featuring my education, skills, experience, and projects.
 
 Built with HTML, CSS, Bootstrap 5, and TypeScript.
@@ -52,7 +54,7 @@ Four projects selected from both resumes. The internship's Lead Intelligence & A
 Use [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages) for this static portfolio. It serves HTML, CSS, and JavaScript directly; there is no application process to restart. Project backends are separate deployments. The existing MediGuard-AI demo link still points to Hugging Face.
 
 1. [x] Check portfolio workflow passed; enabled GitHub Pages from `main` and `/ (root)`.
-2. [ ] Confirm the assigned HTTPS URL works; add its canonical URL and `og:url` to `index.html` after deployment.
+2. [x] Verified the public HTTPS URL and added its canonical URL and `og:url` to `index.html`.
 3. [ ] Check the public site at desktop and mobile widths: navigation, keyboard focus, reduced motion, all four project links, and the demo. Confirm resume PDFs remain excluded.
 
 ## Verification
