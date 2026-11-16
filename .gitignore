@@ -1,5 +1,4 @@
 node_modules/
 .env
-**/data/*.tmp
-outputs/
-projects/task-manager/data/
+/SutikshanUpman.pdf
+/sutikshan_upman.pdf

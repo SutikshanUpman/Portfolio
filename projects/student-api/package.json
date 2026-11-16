@@ -1,7 +1,0 @@
-{
-  "name": "student-api",
-  "version": "1.0.0",
-  "private": true,
-  "scripts": { "start": "node --env-file=.env server.js" },
-  "dependencies": { "express": "5.1.0", "mysql2": "3.14.5" }
-}
